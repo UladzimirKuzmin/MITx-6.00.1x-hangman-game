@@ -59,7 +59,7 @@ def isWordGuessed(secretWord, lettersGuessed):
         count = 0
         n = secretWord.count(char)
         for char2 in secretWord:
-            if char == char2 and count == 0 and not char in collect:
+            if char == char2 and count == 0 and char not in collect:
                 collect += n *char
                 count += 1
 
